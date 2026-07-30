@@ -5,6 +5,11 @@ import * as withResolvers from './promise-withResolvers.js'
 import * as requestIdleCallback from './requestidlecallback.js'
 import * as popover from '@oddbird/popover-polyfill/fn'
 import * as commandAndCommandFor from 'invokers-polyfill/fn'
+import * as objectGroupBy from './object-groupby.js'
+import * as mapGroupBy from './map-groupby.js'
+import * as promiseTry from './promise-try.js'
+import * as iteratorHelpers from './iterator-helpers.js'
+import * as setMethods from './set-methods.js'
 
 let supportsModalPseudo = false
 try {
@@ -53,6 +58,11 @@ export const polyfills = {
   withResolvers,
   popover,
   commandAndCommandFor,
+  objectGroupBy,
+  mapGroupBy,
+  promiseTry,
+  iteratorHelpers,
+  setMethods,
 }
 
 export function isSupported() {
